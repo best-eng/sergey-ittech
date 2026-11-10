@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Разработка мобильного приложения на Flutter для Android и iOS</title>
+<meta name="description" content="Мобильные приложения на Flutter и Firebase: прототип, MVP, push-уведомления, ИИ-функции. Приложение Cydit версии 2.0 — работа нашей команды. Примеры и цены.">
+<link rel="canonical" href="https://sergey-ittech.ru/mobilnoe-prilozhenie-flutter.html">
+<meta property="og:url" content="https://sergey-ittech.ru/mobilnoe-prilozhenie-flutter.html">
+<meta name="yandex-verification" content="c32c6ad0e9b8f708">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Сергей Гордеев">
+<meta property="og:title" content="Разработка мобильного приложения на Flutter для Android и iOS">
+<meta property="og:description" content="Мобильные приложения на Flutter и Firebase: прототип, MVP, push-уведомления, ИИ-функции. Приложение Cydit версии 2.0 — работа нашей команды. Примеры и цены.">
+<meta property="og:image" content="https://sergey-ittech.ru/img/cover-mobile.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#06060c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-120.png" type="image/png" sizes="120x120">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/Manrope-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="styles.css?v=a3d02e02ac">
+<script src="head.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Мобильное приложение на Flutter", "serviceType": "Мобильные приложения", "description": "Мобильные приложения на Flutter и Firebase: прототип, MVP, push-уведомления, ИИ-функции. Приложение Cydit версии 2.0 — работа нашей команды. Примеры и цены.", "areaServed": "RU", "provider": {"@type": "Person", "name": "Сергей Гордеев"}, "offers": {"@type": "AggregateOffer", "priceCurrency": "RUB", "lowPrice": 12000, "highPrice": 50000, "offerCount": 3}, "url": "https://sergey-ittech.ru/mobilnoe-prilozhenie-flutter.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Почему Flutter?", "acceptedAnswer": {"@type": "Answer", "text": "Одно приложение работает и на Android, и на iOS. Это заметно дешевле и быстрее, чем два отдельных."}}, {"@type": "Question", "name": "Нужен ли свой сервер?", "acceptedAnswer": {"@type": "Answer", "text": "Для большинства приложений хватает Firebase: вход, база и push-уведомления без своего сервера."}}, {"@type": "Question", "name": "Поможете с публикацией?", "acceptedAnswer": {"@type": "Answer", "text": "Да: подготовлю сборки и описания. Аккаунты разработчика оформляются на вас."}}, {"@type": "Question", "name": "Можно начать с малого?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Сначала делаю прототип из 2–3 экранов, вы пробуете его на телефоне и решаете, что развивать."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://sergey-ittech.ru/"}, {"@type": "ListItem", "position": 2, "name": "Мобильные приложения", "item": "https://sergey-ittech.ru/mobilnoe-prilozhenie-flutter.html"}]}</script>
+</head>
+<body class="acc-mobile">
+<div class="backdrop" aria-hidden="true"></div>
+<svg class="sprite" aria-hidden="true"><symbol id="i-sites" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M6.5 6.5h.01M9.5 6.5h.01"/></symbol><symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 10h18M10 10v10"/></symbol><symbol id="i-bots" viewBox="0 0 24 24"><path d="M21 3 10.5 13.5M21 3l-6.5 18-4-7.5L3 9.5 21 3z"/></symbol><symbol id="i-parsing" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol><symbol id="i-integrations" viewBox="0 0 24 24"><path d="M4 8h15l-3.5-3.5M20 16H5l3.5 3.5"/></symbol><symbol id="i-mobile" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18h2"/></symbol><symbol id="i-devops" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01M11 7.5h6M11 16.5h6"/></symbol><symbol id="i-data" viewBox="0 0 24 24"><path d="M5 20v-8M11 20V5M17 20v-11M3 20h18"/></symbol><symbol id="i-contract" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol><symbol id="i-stages" viewBox="0 0 24 24"><path d="M3 19h5v-5h5V9h5V4h3"/></symbol><symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 8h6"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5M12 16h.01"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13l8.5-5.5"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5z"/></symbol></svg>
+<header class="site-header"><div class="header-bar">
+<a class="brand" href="./"><span class="mark">СГ</span><span><b>Сергей Гордеев</b><i>разработка под ключ</i></span></a>
+<nav class="nav" id="nav" aria-label="Разделы">
+<a href="./#services">Услуги</a><a href="./#sites">Работы</a>
+<a href="./#cases">Кейсы</a><a href="otzyvy.html">Отзывы</a><a href="./#how">Как работаю</a>
+<a href="./#faq">Вопросы</a>
+</nav>
+<div class="header-actions">
+<a class="btn btn-primary btn-sm header-cta" href="#contacts">Связаться</a>
+<button class="menu-toggle" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+<svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg></button>
+</div>
+</div></header>
+<main>
+<section class="hero svc-hero"><div class="container">
+<div class="hero-grid">
+<div class="hero-copy">
+<p class="crumbs"><a href="./">Главная</a> / <a href="./#services">Услуги</a></p>
+<p class="eyebrow">Мобильные приложения</p>
+<h1>Мобильное приложение <span class="grad">на Flutter</span></h1>
+<p class="lead">Разрабатываю приложения для Android и iOS на одной кодовой базе: от экранов и входа до push-уведомлений и ИИ-функций. Приложение Cydit мы с командой из трёх человек довели до версии 2.0.</p>
+<div class="hero-actions"><a class="btn btn-primary btn-lg" href="#contacts">Связаться<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<a class="btn btn-outline btn-lg" href="#cases">Кейсы · 1</a></div>
+<p class="status-line"><span class="dot"></span>Работаю как ИП: договор, счёт, акт</p>
+</div>
+<aside class="panel panel-glow price" aria-label="Сколько стоит">
+<h2>Сколько стоит</h2>
+<ul><li><span>2–3 экрана с входом и данными</span><b>от 12 000 ₽</b><i>5–7 дней</i></li><li><span>MVP до 8 экранов: база, push, сборка</span><b>от 30 000 ₽</b><i>2–3 недели</i></li><li><span>Приложение с подписками, ИИ и админкой</span><b>от 50 000 ₽</b><i>от 4 недель</i></li></ul>
+<p>Точную цену называю после разбора задачи и фиксирую в договоре.</p>
+</aside>
+</div>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="section-head reveal"><p class="eyebrow">Состав работ</p><h2>Что входит</h2>
+<p class="section-sub"><b>Кому подойдёт.</b> Стартапам и бизнесу, которым нужен MVP или первое приложение без команды из пяти человек.</p></div>
+<ul class="checklist panel reveal"><li>Прототип экранов и сценариев до разработки</li><li>Android и iOS из одного кода</li><li>Вход, профиль, база данных, push-уведомления</li><li>Правила доступа к данным и защита от поддельных запросов</li><li>Отчёты о сбоях и автоматическая сборка</li><li>Подготовка к публикации в магазинах приложений</li></ul>
+</div></section>
+
+<section class="section" id="cases"><div class="container">
+<div class="section-head reveal"><p class="eyebrow">Кейсы</p><h2>Что уже сделано</h2>
+<p class="section-sub">Сайты показываю с согласия заказчиков; в остальных кейсах — отрасль, задача
+и результат.</p></div>
+<div class="cases">
+<article class="case reveal acc-mobile" id="cydit-app" data-s="mobile">
+<div class="case-shot"><img src="img/cydit-home.webp" alt="Экран приложения Cydit" loading="lazy" width="720" height="1251"></div><div class="case-top"><span class="tag">Мобильные приложения</span><span class="ind">Продукт нашей команды</span></div>
+<h3><a href="kejs-cydit-app.html">Cydit — мобильное ИИ-приложение, сделали втроём</a></h3>
+<div class="metric"><b>v2.0</b><span>версия приложения, бета для Android</span></div>
+<p>Приложение превращает записанные мысли — текстом или голосом — в память, цели, задачи и планы. Сделано командой из трёх человек.</p>
+<details><summary>Как сделано<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+<p class="task">Продукт нашей команды из трёх человек: помощник, который разбирает поток мыслей и подсказывает следующий шаг.</p>
+<ul><li>Flutter: один код для Android и iOS, чистая архитектура</li><li>Firebase: вход, база с правилами доступа, функции, хранилище, push, отчёты о сбоях</li><li>ИИ работает через собственный шлюз с запасным режимом, если модель недоступна</li><li>Тарифы FREE, PLUS и PRO с лимитами ИИ-запросов</li><li>Проверки и сборка запускаются автоматически</li></ul>
+<div class="stack"><span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">Riverpod</span><span class="pill">Firebase</span><span class="pill">OpenAI API</span><span class="pill">GitHub Actions</span></div><a class="more" href="https://cydit.pro/" rel="noopener">Сайт приложения<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+</details>
+<a class="case-open" href="kejs-cydit-app.html">Открыть кейс<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+</article>
+</div>
+</div></section>
+
+<section class="section" id="reviews"><div class="container">
+<div class="section-head reveal"><p class="eyebrow">Отзывы</p><h2>Что говорят заказчики</h2>
+<p class="section-sub reviews-note">19 отзывов на Профи.ру, средняя оценка 5,0 из 5. Тексты перенесены без правок — каждый можно проверить в <a href="https://profi.ru/profile/GordeyevSA13/" rel="noopener" target="_blank">профиле на Профи.ру</a>.</p></div>
+<ul class="reviews"><li class="review reveal"><div class="review-top"><span class="stars" role="img" aria-label="Оценка 5 из 5">★★★★★</span><time datetime="2026-10-13">13 октября 2026</time></div><div class="review-text"><p>Я вообще не понимаю в создании сайта ни чего. Решил проверить, на авось. Заказал для будущей работы сайт, Сергей все до полочки мне разложил, в течении суток готов и сайт и чат бот в максе и я рад, что теперь в паутине засветился. Спасибо огромное Сергей. Вы настоящий профессионал в своем деле. Удачи!</p></div><p class="review-who"><b>Алексей</b><span>Landing page</span></p></li><li class="review reveal"><div class="review-top"><span class="stars" role="img" aria-label="Оценка 5 из 5">★★★★★</span><time datetime="2026-10-05">5 октября 2026</time></div><div class="review-text"><p>Спасибо большое за такой прекрасный сайт, который вы мне сделали! Все мои запросы, абсолютно все были учтены! На всем протяжении создания я вводила корректировки, которые вы все учли, для меня это было важно, чтобы вы всегда были на связи, потому что я очень переживала. Безмерно вам благодарна!</p></div><p class="review-who"><b>Элеонора</b><span>Создание сайта-визитки</span></p></li><li class="review reveal"><div class="review-top"><span class="stars" role="img" aria-label="Оценка 5 из 5">★★★★★</span><time datetime="2026-04-06">6 апреля 2026</time></div><div class="review-text"><p>Обратился за доработкой и запуском сайта на WordPress. Сергей показал себя с самой лучшей стороны, своевременно был на связи, решал все задачи, предлагал идеи. Видно, что человек понимает, что делает и делает на совесть. Сделали главную, каталог, технические страницы, корзину, все по ТЗ.</p><p>Благодарю вас за проделанную работу, Сергей, всех благ и процветания вашему делу.</p></div><p class="review-who"><b>Вадим</b><span>Верстальщики • Вёрстка сайтов</span></p></li></ul>
+<p class="reviews-more reveal"><a class="btn btn-outline" href="otzyvy.html">Все отзывы · 19<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+</div></section>
+<section class="section"><div class="container">
+<div class="section-head reveal"><p class="eyebrow">Как это выглядит</p><h2>Примеры интерфейсов</h2>
+<p class="section-sub">Демонстрационные макеты на вымышленных данных: интерфейсы заказчиков я не показываю.</p></div>
+<div class="demos"><figure class="reveal"><img src="img/demo-10-flutter.webp" alt="Экраны приложения" width="1200" height="857" loading="lazy"><figcaption>Экраны приложения</figcaption></figure><figure class="reveal"><img src="img/demo-20-flutter-features.webp" alt="Возможности приложения" width="1200" height="857" loading="lazy"><figcaption>Возможности приложения</figcaption></figure></div>
+</div></section>
+<section class="section" id="how"><div class="container">
+<div class="section-head reveal"><p class="eyebrow">Как работаю</p>
+<h2>От задачи до запуска — четыре шага</h2></div>
+<ol class="steps panel reveal"><li><span class="step-num">1</span><div><strong>Разбираю задачу</strong><span class="t">Вы описываете словами, что нужно. Задаю вопросы и возвращаюсь с составом работ, сроком и ценой.</span></div></li><li><span class="step-num">2</span><div><strong>Заключаем договор</strong><span class="t">Работаю как ИП: в договоре — состав работ, этапы, срок и цена. Цена не меняется, пока не меняется задача.</span></div></li><li><span class="step-num">3</span><div><strong>Показываю по ходу</strong><span class="t">Промежуточный результат вы видите на рабочей ссылке, а не в самом конце.</span></div></li><li><span class="step-num">4</span><div><strong>Запускаю и передаю</strong><span class="t">Разворачиваю у вас, передаю код, доступы и инструкцию. Остаюсь на связи после запуска.</span></div></li></ol>
+</div></section>
+
+<section class="section" id="faq"><div class="container">
+<div class="section-head reveal"><p class="eyebrow">Вопросы</p><h2>Вопросы об услуге</h2></div>
+<div class="faq"><details class="faq-item reveal"><summary>Почему Flutter?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Одно приложение работает и на Android, и на iOS. Это заметно дешевле и быстрее, чем два отдельных.</p></details><details class="faq-item reveal"><summary>Нужен ли свой сервер?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Для большинства приложений хватает Firebase: вход, база и push-уведомления без своего сервера.</p></details><details class="faq-item reveal"><summary>Поможете с публикацией?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Да: подготовлю сборки и описания. Аккаунты разработчика оформляются на вас.</p></details><details class="faq-item reveal"><summary>Можно начать с малого?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Да. Сначала делаю прототип из 2–3 экранов, вы пробуете его на телефоне и решаете, что развивать.</p></details></div>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="section-head reveal"><p class="eyebrow">Другие услуги</p></div>
+<div class="others reveal"><a class="acc-sites" href="sajt-pod-klyuch.html"><svg class="icon" aria-hidden="true"><use href="#i-sites"/></svg>Сайты под ключ</a><a class="acc-layout" href="verstka-po-maketu.html"><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg>Вёрстка по макету</a><a class="acc-bots" href="telegram-bot.html"><svg class="icon" aria-hidden="true"><use href="#i-bots"/></svg>Telegram-боты и Mini App</a><a class="acc-parsing" href="parser-i-avtomatizaciya.html"><svg class="icon" aria-hidden="true"><use href="#i-parsing"/></svg>Парсеры и автоматизация</a><a class="acc-integrations" href="integraciya-1c-crm.html"><svg class="icon" aria-hidden="true"><use href="#i-integrations"/></svg>Интеграции 1С, CRM, боты</a><a class="acc-devops" href="nastrojka-servera-i-deploj.html"><svg class="icon" aria-hidden="true"><use href="#i-devops"/></svg>Серверы и деплой</a><a class="acc-data" href="analiz-dannyh-i-prezentacii.html"><svg class="icon" aria-hidden="true"><use href="#i-data"/></svg>Анализ данных и презентации</a></div>
+</div></section>
+<section class="section access" id="contacts"><div class="container">
+<div class="access-card reveal">
+<div class="access-body">
+<p class="eyebrow">Связаться</p>
+<h2>Обсудим вашу задачу</h2>
+<p class="access-text">Техническое задание не нужно. Задам вопросы и вернусь с составом работ, сроком и ценой.
+Работаю удалённо по всей России, по договору от ИП.</p>
+</div>
+<div class="lead-form direct-card">
+<h3>Напишите или позвоните</h3>
+<p>Пары фраз о задаче достаточно. Отвечаю с 9:00 до 21:00 по Москве.</p>
+<div class="direct-buttons"><a class="btn btn-primary btn-lg" href="https://t.me/Sergey_tech_RU" rel="noopener" data-goal="telegram"><svg class="icon" aria-hidden="true"><use href="#i-bots"/></svg>Написать в Telegram</a><a class="btn btn-outline btn-lg" href="tel:+79826317353" data-goal="phone"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>+7 982 631-73-53</a><a class="btn btn-outline btn-lg" href="mailto:sergeytechru@gmail.com?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0" data-goal="mail"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>sergeytechru@gmail.com</a></div>
+</div>
+</div>
+</div></section>
+</main>
+<footer class="footer"><div class="container footer-grid">
+<div class="footer-brand"><a class="brand" href="./"><span class="mark">СГ</span><span><b>Сергей Гордеев</b><i>разработка под ключ</i></span></a>
+<p>Заказчики названы и сайты показаны только с их согласия; в остальных кейсах — отрасль, задача
+и решение. Картинки с пометкой «демо» — макеты на вымышленных данных.</p></div>
+<nav class="footer-col" aria-label="Услуги"><strong>Услуги</strong><a href="sajt-pod-klyuch.html">Сайты под ключ</a><a href="verstka-po-maketu.html">Вёрстка по макету</a><a href="telegram-bot.html">Telegram-боты и Mini App</a><a href="parser-i-avtomatizaciya.html">Парсеры и автоматизация</a><a href="integraciya-1c-crm.html">Интеграции 1С, CRM, боты</a><a href="mobilnoe-prilozhenie-flutter.html">Мобильные приложения</a><a href="nastrojka-servera-i-deploj.html">Серверы и деплой</a><a href="analiz-dannyh-i-prezentacii.html">Анализ данных и презентации</a></nav>
+<p class="footer-copy">© ИП Гордеев Сергей Андреевич · ИНН 663299015699 · ОГРНИП 326965800222296<br><a href="politika.html">Политика обработки персональных данных</a> · <button class="link" type="button" data-cookie-reset>Настройки cookie</button></p>
+</div></footer>
+<div class="cookie" data-cookie data-metrika="metrika.js" data-metrika-id="113988013" role="region"
+ aria-label="Файлы cookie" hidden>
+<p>Сайт использует Яндекс Метрику и файлы cookie, чтобы понимать, какие страницы полезны.
+Подробнее — в <a href="politika.html#cookie">политике</a>.</p>
+<div class="cookie-actions">
+<button class="btn btn-primary btn-sm" type="button" data-cookie-yes>Понятно</button>
+<button class="btn btn-outline btn-sm" type="button" data-cookie-no>Отказаться</button>
+</div>
+</div>
+<script src="app.js?v=7e6c5ffa1a" defer></script>
+</body></html>
